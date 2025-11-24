@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
 import ContactSplit from "@/components/sections/contact/ContactSplit";
-import { Calendar } from "lucide-react";
 import FooterSocial from "@/components/sections/footer/FooterSocial";
+import { Calendar } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -24,6 +24,7 @@ export default function ContactPage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           navItems={[
+            { name: "Home", id: "/" },
             { name: "Services", id: "/services" },
             { name: "About", id: "/about" },
             { name: "Pricing", id: "/pricing" },

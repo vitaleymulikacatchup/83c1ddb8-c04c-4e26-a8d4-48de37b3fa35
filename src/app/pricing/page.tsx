@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
 import PricingCardTwo from "@/components/sections/pricing/PricingCardTwo";
-import { Crown, Sparkles, Gem } from "lucide-react";
 import FooterSocial from "@/components/sections/footer/FooterSocial";
+import { Crown, Sparkles, Gem } from "lucide-react";
 
 export default function PricingPage() {
   return (
@@ -24,6 +24,7 @@ export default function PricingPage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           navItems={[
+            { name: "Home", id: "/" },
             { name: "Services", id: "/services" },
             { name: "About", id: "/about" },
             { name: "Pricing", id: "/pricing" },

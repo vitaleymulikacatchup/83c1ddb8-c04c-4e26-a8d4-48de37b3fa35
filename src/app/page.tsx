@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
@@ -6,8 +6,8 @@ import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloating
 import HeroCarouselLogo from "@/components/sections/hero/heroCarouselLogo/HeroCarouselLogo";
 import TextAbout from "@/components/sections/about/TextAbout";
 import FeatureCardEight from "@/components/sections/feature/FeatureCardEight";
-import { Sparkles } from "lucide-react";
 import FooterSocial from "@/components/sections/footer/FooterSocial";
+import { Sparkles } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -26,6 +26,7 @@ export default function HomePage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           navItems={[
+            { name: "Home", id: "/" },
             { name: "Services", id: "/services" },
             { name: "About", id: "/about" },
             { name: "Pricing", id: "/pricing" },
@@ -128,7 +129,7 @@ export default function HomePage() {
             items: [
               { label: "Facial Treatments", href: "/services" },
               { label: "Skincare Consultation", href: "/services" },
-              { label: "Beauty Products", href: "/products" },
+              { label: "Beauty Products", href: "/services" },
               { label: "Treatment Packages", href: "/pricing" }
             ]
           },

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
@@ -9,7 +9,7 @@ import TestimonialCardOne from "@/components/sections/testimonial/TestimonialCar
 import SocialProofOne from "@/components/sections/socialProof/SocialProofOne";
 import FaqDouble from "@/components/sections/faq/FaqDouble";
 import FooterSocial from "@/components/sections/footer/FooterSocial";
-import { Award, Users, MessageSquare, Handshake, HelpCircle } from "lucide-react";
+import { Award, Users, MessageSquare, Handshake, HelpCircle, Star, Gem } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -28,6 +28,7 @@ export default function AboutPage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           navItems={[
+            { name: "Home", id: "/" },
             { name: "Services", id: "/services" },
             { name: "About", id: "/about" },
             { name: "Pricing", id: "/pricing" },
@@ -56,28 +57,28 @@ export default function AboutPage() {
               value: "2000+",
               title: "Happy Clients",
               description: "Satisfied customers who trust us with their beauty journey",
-              icon: "Users"
+              icon: Users
             },
             {
               id: "2",
               value: "8",
               title: "Years Experience",
               description: "Decades of expertise in professional beauty treatments",
-              icon: "Award"
+              icon: Award
             },
             {
               id: "3",
               value: "98%",
               title: "Satisfaction Rate",
               description: "Client satisfaction rating based on post-treatment surveys",
-              icon: "Star"
+              icon: Star
             },
             {
               id: "4",
               value: "15+",
               title: "Premium Brands",
               description: "Luxury beauty brands we partner with for the best products",
-              icon: "Gem"
+              icon: Gem
             }
           ]}
         />
@@ -236,7 +237,7 @@ export default function AboutPage() {
             items: [
               { label: "Facial Treatments", href: "/services" },
               { label: "Skincare Consultation", href: "/services" },
-              { label: "Beauty Products", href: "/products" },
+              { label: "Beauty Products", href: "/services" },
               { label: "Treatment Packages", href: "/pricing" }
             ]
           },
