@@ -1,10 +1,11 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
+import Link from "next/link";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
 import ProductCardOne from "@/components/sections/product/ProductCardOne";
 import FooterSocial from "@/components/sections/footer/FooterSocial";
-import { Package } from "lucide-react";
+import { Package, Instagram, Facebook, Twitter } from "lucide-react";
 
 export default function ServicesPage() {
   return (
@@ -106,17 +107,17 @@ export default function ServicesPage() {
         ]}
         socialLinks={[
           {
-            icon: "Instagram",
+            icon: Instagram,
             href: "https://instagram.com/freshalicebeauty",
             ariaLabel: "Follow us on Instagram"
           },
           {
-            icon: "Facebook",
+            icon: Facebook,
             href: "https://facebook.com/freshalicebeauty",
             ariaLabel: "Like us on Facebook"
           },
           {
-            icon: "Twitter",
+            icon: Twitter,
             href: "https://twitter.com/freshalicebeauty",
             ariaLabel: "Follow us on Twitter"
           }
