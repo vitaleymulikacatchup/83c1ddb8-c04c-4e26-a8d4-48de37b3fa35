@@ -1,6 +1,7 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
+import Link from "next/link";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
 import FeatureCardEight from "@/components/sections/feature/FeatureCardEight";
 import ProductCardOne from "@/components/sections/product/ProductCardOne";
@@ -113,56 +114,58 @@ export default function ServicesPage() {
         />
       </div>
 
-      <FooterSocial
-        brandName="Fresh Alice"
-        copyrightText="© 2025 Fresh Alice Beauty Studio. All rights reserved."
-        columns={[
-          {
-            title: "Services",
-            items: [
-              { label: "Facial Treatments", href: "/services" },
-              { label: "Skincare Consultation", href: "/services" },
-              { label: "Beauty Products", href: "/services" },
-              { label: "Treatment Packages", href: "/pricing" }
-            ]
-          },
-          {
-            title: "Company",
-            items: [
-              { label: "About Us", href: "/about" },
-              { label: "Our Team", href: "/about" },
-              { label: "Testimonials", href: "/about" },
-              { label: "Contact", href: "/contact" }
-            ]
-          },
-          {
-            title: "Support",
-            items: [
-              { label: "FAQ", href: "/about" },
-              { label: "Book Appointment", href: "/contact" },
-              { label: "Gift Cards", href: "/contact" },
-              { label: "Cancellation Policy", href: "/about" }
-            ]
-          }
-        ]}
-        socialLinks={[
-          {
-            icon: Instagram,
-            href: "https://instagram.com/freshalicebeauty",
-            ariaLabel: "Follow us on Instagram"
-          },
-          {
-            icon: Facebook,
-            href: "https://facebook.com/freshalicebeauty",
-            ariaLabel: "Like us on Facebook"
-          },
-          {
-            icon: Twitter,
-            href: "https://twitter.com/freshalicebeauty",
-            ariaLabel: "Follow us on Twitter"
-          }
-        ]}
-      />
+      <div id="footer" data-section="footer">
+        <FooterSocial
+          logoText="Fresh Alice"
+          copyrightText="© 2025 Fresh Alice Beauty Studio. All rights reserved."
+          columns={[
+            {
+              title: "Services",
+              items: [
+                { label: "Facial Treatments", href: "/services" },
+                { label: "Skincare Consultation", href: "/services" },
+                { label: "Beauty Products", href: "/services" },
+                { label: "Treatment Packages", href: "/pricing" }
+              ]
+            },
+            {
+              title: "Company",
+              items: [
+                { label: "About Us", href: "/about" },
+                { label: "Our Team", href: "/about" },
+                { label: "Testimonials", href: "/about" },
+                { label: "Contact", href: "/contact" }
+              ]
+            },
+            {
+              title: "Support",
+              items: [
+                { label: "FAQ", href: "/about" },
+                { label: "Book Appointment", href: "/contact" },
+                { label: "Gift Cards", href: "/contact" },
+                { label: "Cancellation Policy", href: "/about" }
+              ]
+            }
+          ]}
+          socialLinks={[
+            {
+              icon: Instagram,
+              href: "https://instagram.com/freshalicebeauty",
+              ariaLabel: "Follow us on Instagram"
+            },
+            {
+              icon: Facebook,
+              href: "https://facebook.com/freshalicebeauty",
+              ariaLabel: "Like us on Facebook"
+            },
+            {
+              icon: Twitter,
+              href: "https://twitter.com/freshalicebeauty",
+              ariaLabel: "Follow us on Twitter"
+            }
+          ]}
+        />
+      </div>
     </ThemeProvider>
   );
 }
