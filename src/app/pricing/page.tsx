@@ -1,7 +1,6 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
 import PricingCardTwo from "@/components/sections/pricing/PricingCardTwo";
 import FooterSocial from "@/components/sections/footer/FooterSocial";

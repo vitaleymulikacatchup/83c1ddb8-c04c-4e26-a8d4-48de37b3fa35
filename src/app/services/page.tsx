@@ -1,11 +1,11 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
+import FeatureCardEight from "@/components/sections/feature/FeatureCardEight";
 import ProductCardOne from "@/components/sections/product/ProductCardOne";
 import FooterSocial from "@/components/sections/footer/FooterSocial";
-import { Package, Instagram, Facebook, Twitter } from "lucide-react";
+import { Sparkles, Package, Instagram, Facebook, Twitter } from "lucide-react";
 
 export default function ServicesPage() {
   return (
@@ -35,6 +35,46 @@ export default function ServicesPage() {
             text: "Book Appointment",
             href: "/contact"
           }}
+        />
+      </div>
+
+      <div id="services" data-section="services">
+        <FeatureCardEight
+          title="Our Signature Services"
+          description="Discover our comprehensive range of professional beauty treatments designed to enhance your natural radiance"
+          tag="Services"
+          tagIcon={Sparkles}
+          textboxLayout="default"
+          features={[
+            {
+              id: 1,
+              title: "Advanced Facial Treatments",
+              description: "Customized facial treatments using the latest skincare technology and premium products to rejuvenate and restore your skin's natural glow",
+              imageSrc: "https://pixabay.com/get/gff3d73e762d6856cb33045a2fdc21a4c7ea692ebfebcdf0ecb2bd2d9b2529772183618a82833c3986639fbc17243927a7204f0b70a35fa397c47746a371948c9_1280.jpg",
+              imageAlt: "Professional facial treatment"
+            },
+            {
+              id: 2,
+              title: "Skincare Consultation",
+              description: "Personalized skin analysis and expert recommendations to create the perfect skincare routine tailored to your unique needs",
+              imageSrc: "https://pixabay.com/get/g45867ae2c062bca3b11410c982b505f82fc830fea13518662788156d9475c025c2a8fe538ef14515dd85156e0ce7a11b6c392fc78a7fd013b5b3a49b3f29d69e_1280.jpg",
+              imageAlt: "Skincare consultation session"
+            },
+            {
+              id: 3,
+              title: "Premium Product Application",
+              description: "Professional application of luxury skincare products with techniques that maximize absorption and effectiveness",
+              imageSrc: "https://pixabay.com/get/g94bf50ca7db086a7431b9b0550653b8cc8d847a8ffc182b17361ee21add4835b0514db192b57a5e3b2e47933853ec15d54e3807716c81173e3887e525d9773f1_1280.jpg",
+              imageAlt: "Beauty product application"
+            },
+            {
+              id: 4,
+              title: "Relaxation & Wellness",
+              description: "Complete wellness experience combining beauty treatments with relaxation techniques in our tranquil environment",
+              imageSrc: "https://pixabay.com/get/g3cf733f6cb37a55eb5736465d7e2cabae09d89989a996a8ba09f223aae840a69b880c406b22a851bbfc02c98419677073e8aaf0f9daaf5ed94450d997c0dc8d2_1280.jpg",
+              imageAlt: "Relaxing spa treatment room"
+            }
+          ]}
         />
       </div>
 

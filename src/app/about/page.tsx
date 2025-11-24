@@ -1,7 +1,6 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import Link from "next/link";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
 import MetricCardOne from "@/components/sections/metrics/MetricCardOne";
 import TeamCardOne from "@/components/sections/team/TeamCardOne";
@@ -229,7 +228,6 @@ export default function AboutPage() {
       </div>
 
       <FooterSocial
-        brandName="Fresh Alice"
         copyrightText="© 2025 Fresh Alice Beauty Studio. All rights reserved."
         columns={[
           {
